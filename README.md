@@ -3,6 +3,8 @@ Simple example of a web client with sidebar menu for Single Page App using Boots
 
 The intent of this repo is to test a simple client for a single page app, with 'fakey' pagination functioning.  We need a functional navigation system that works well on mobile devices without a lot of overhead.
 
+## [Click for Demo](https://zipzit.github.io/bootstrap_SPA_sidebar_menu/)
+
 Use case:  
  - We're working with small and medium sized businesses to help them manage their internal operations.  
  - We want to take advantage of their employees' mobile phones.  (Bring your own device -- BYOD)
