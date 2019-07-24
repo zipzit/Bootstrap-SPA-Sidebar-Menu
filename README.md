@@ -22,7 +22,7 @@ To make deployment simple, we want a single server for API calls, AJAX calls and
 I suspect using this navigation system (and Bootstrap) offers a relatively painless alternative to (existing) jQuery Mobile applications.  This proposal uses virtually no additional libraries... The key functioning elements are native to Bootstrap and just a few lines of plain javascript.  
 
  # References:
-   The initial inspiration for this work came from [this SoloDev posting](https://www.solodev.com/blog/web-design/adding-pagination-to-your-website.stml)  Unfortunately pagination isn't really what we want.
+   The initial inspiration for this work came from [this SoloDev posting.](https://www.solodev.com/blog/web-design/adding-pagination-to-your-website.stml)  Unfortunately pagination isn't really what we want.
 
    The basic navigation structure of the final sample here came from [this posting at BootStrapious[(https://bootstrapious.com/p/bootstrap-sidebar)  I will say, while I was searching for alternatives to my jQuery Mobile dilemma, I did come across the [Bootstrapious Creative Portfolio template](https://bootstrapious.com/p/creative-portfolio).  Very nicely done. And hey, the [Bootstrapious blog](https://bootstrapious.com/blog) is pretty awesome.   
 
