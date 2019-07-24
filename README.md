@@ -24,7 +24,7 @@ I suspect using this navigation system (and Bootstrap) offers a relatively painl
  # References:
    The initial inspiration for this work came from [this SoloDev posting](https://www.solodev.com/blog/web-design/adding-pagination-to-your-website.stml)  Unfortunately pagination isn't really what we want.
 
-   The basic navigation structure of the final sample here came from (this posting at BootStrapious)[https://bootstrapious.com/p/bootstrap-sidebar]  I will say, while I was searching for alternatives to my jQuery Mobile dilemma, I did come across the [Bootstrapious Creative Portfolio template](https://bootstrapious.com/p/creative-portfolio).  Very nicely done. And hey, the [Bootstrapious blog](https://bootstrapious.com/blog) is pretty awesome.   
+   The basic navigation structure of the final sample here came from [this posting at BootStrapious[(https://bootstrapious.com/p/bootstrap-sidebar)  I will say, while I was searching for alternatives to my jQuery Mobile dilemma, I did come across the [Bootstrapious Creative Portfolio template](https://bootstrapious.com/p/creative-portfolio).  Very nicely done. And hey, the [Bootstrapious blog](https://bootstrapious.com/blog) is pretty awesome.   
 
    Many thanks to Ondrej Svestka and the folks at Bootstrapious for their work...
    
