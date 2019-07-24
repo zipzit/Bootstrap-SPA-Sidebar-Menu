@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <!-- ref:     https://bootstrapious.com/p/bootstrap-sidebar -->
+    <!-- ref:     https://www.solodev.com/blog/web-design/adding-pagination-to-your-website.stml -->
+
+    <!-- note to self:
+    container
+    Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding -->
+    <!-- page, not a css class -->
+    <!-- jumbotron, a CSS class -->
+    <!-- bootstrap collapse or the solodev method ?? (see js below) -->
+    <!-- ans:  definitely collapse      https://getbootstrap.com/docs/4.0/components/collapse/    -->
+
+    <!-- The tabs plugin also works with pills.
+    https://getbootstrap.com/docs/4.0/components/navs/ -->
+    <!-- on that link look for " And with vertical pills." -->
+
+    <!-- reference: -->
+    <!-- https://stackoverflow.com/questions/26440835/javascript-menu-setting-class-to-active -->
+
+    <!-- my so posting:  https://stackoverflow.com/questions/57174643/use-bootstrap-to-manage-a-single-page-app-with-pseudo-pagination-functions -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 4</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <h5>Bootstrap Sidebar</h5>
+                </div>
+
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#about" role="tab" aria-controls="v-pills-profile" aria-selected="false">About</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#pages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pages</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#portfolio" role="tab" aria-controls="v-pills-settings" aria-selected="false">Portfolio</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#contacts" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contacts</a>
+                </div>
+            </nav>
+
+            <!-- Page Content  -->
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                            <span>Toggle Sidebar</span>
+                        </button>
+                    </div>
+                </nav>
+
+                <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="jumbotron">
+                        <h2 class="display-3">Safe, you made it to Home [Base]</h2>
+                        <p class="lead">We adding pagination, an excellent way to navigate large amounts of content, on your website using a jQuery and Bootstrap.</p>
+                        <p><a class="btn btn-lg btn-success" href="#" role="button">Learn More</a></p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="jumbotron">
+                        <h2 class="display-3">About, what is this all about?</h2>
+                        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p><a class="btn btn-lg btn-success" href="#" role="button">Click here</a></p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="jumbotron">
+                        <h2 class="display-3">Data. Data. Data.</h2>
+                        <p>This example is a quick exercise to illustrate how the default responsive navbar works. It's placed within a <code>.container</code> to limit its width and will scroll with the rest of the page's content.</p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="../../components/navbar" role="button">View navbar docs »</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="jumbotron">
+                        <h2 style="-webkit-user-select: auto;">Buy Now!</h2>
+                        <p class="lead" style="-webkit-user-select: auto;">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+                        <p style="-webkit-user-select: auto;"><a class="btn btn-lg btn-success" href="#" role="button" style="-webkit-user-select: auto;">Get started today</a></p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="contacts" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="jumbotron">
+                        <h2 class="cover-heading">Team Members Contact Info</h2>
+                        <p class="lead">Aaron<br>Blaine<br>Celeste<br>Darlene</p>
+                        <p class="lead">
+                            <a href="#" class="btn btn-lg btn-primary">More...</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#sidebar").mCustomScrollbar({
+                    // Scrolling only necessary for long / extended menus..
+                    // its not really needed in this short example...
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function() {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                });
+
+                $('#sidebarCollapse').on('click', function() {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').addClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+
+                $('div.nav-pills a.nav-link').on('click', function(){
+                    // close sidebar drawer menu upon a selection
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                })
+
+            });
+        </script>
+    </body>
+
+</html>
