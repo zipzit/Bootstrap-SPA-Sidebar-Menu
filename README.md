@@ -29,8 +29,8 @@ I suspect using this navigation system (and Bootstrap) offers a relatively painl
    Many thanks to Ondrej Svestka and the folks at Bootstrapious for their work...
    
  # Search Terms
- Single Page App - SPA
- jQuery Mobile alternatives
- Bootstrap Menu, Bootstrap Nav
- Bootstrap Tab Navigation, Bootstrap Pill Navigation 
- Progressive Web App - PWA
+ label:Single Page App - SPA
+ label:jQuery Mobile alternatives
+ label:Bootstrap Menu, Bootstrap Nav
+ label:Bootstrap Tab Navigation, Bootstrap Pill Navigation 
+ label"Progressive Web App - PWA
