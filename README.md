@@ -17,7 +17,7 @@ We happen to like a left hand, slide out menu, activated by three bar menu icon 
 
 To make deployment simple, we want a single server for API calls, AJAX calls and serving up browser/client content.  [NodeJS / Express preferred... ]  Bootstrap with this navigation proposal supports that well.
 
-I suspect using this navigation system (and Bootstrap) offers a relatively painless alternative to (existing) jQuery Mobile applications.
+I suspect using this navigation system (and Bootstrap) offers a relatively painless alternative to (existing) jQuery Mobile applications.  This proposal uses virtually no additional libraries... The key functioning elements are native to Bootstrap and just a few lines of plain javascript.  
 
  # References:
    The initial inspiration for this work came from [this SoloDev posting](https://www.solodev.com/blog/web-design/adding-pagination-to-your-website.stml)  Unfortunately pagination isn't really what we want.
@@ -25,3 +25,10 @@ I suspect using this navigation system (and Bootstrap) offers a relatively painl
    The basic navigation structure of the final sample here came from (this posting at BootStrapious)[https://bootstrapious.com/p/bootstrap-sidebar]  I will say, while I was searching for alternatives to my jQuery Mobile dilemma, I did come across the [Bootstrapious Creative Portfolio template](https://bootstrapious.com/p/creative-portfolio).  Very nicely done. And hey, the [Bootstrapious blog](https://bootstrapious.com/blog) is pretty awesome.   
 
    Many thanks to Ondrej Svestka and the folks at Bootstrapious for their work...
+   
+ # Search Terms
+ Single Page App - SPA
+ jQuery Mobile alternatives
+ Bootstrap Menu, Bootstrap Nav
+ Bootstrap Tab Navigation, Bootstrap Pill Navigation 
+ Progressive Web App - PWA
