@@ -193,6 +193,11 @@ a.article:hover {
     right: 0; */
 }
 
+.wrapper{
+    margin: 10px;
+    padding: 5px 10px 5px 20px;
+}
+
 /* solodev info */
 .container {
   margin-top: 20px;

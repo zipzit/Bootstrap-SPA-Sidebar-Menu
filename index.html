@@ -1,25 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <!-- ref:     https://bootstrapious.com/p/bootstrap-sidebar -->
-    <!-- ref:     https://www.solodev.com/blog/web-design/adding-pagination-to-your-website.stml -->
-
-    <!-- note to self:
-    container
-    Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding -->
-    <!-- page, not a css class -->
-    <!-- jumbotron, a CSS class -->
-    <!-- bootstrap collapse or the solodev method ?? (see js below) -->
-    <!-- ans:  definitely collapse      https://getbootstrap.com/docs/4.0/components/collapse/    -->
-
-    <!-- The tabs plugin also works with pills.
-    https://getbootstrap.com/docs/4.0/components/navs/ -->
-    <!-- on that link look for " And with vertical pills." -->
-
-    <!-- reference: -->
-    <!-- https://stackoverflow.com/questions/26440835/javascript-menu-setting-class-to-active -->
-
-    <!-- my so posting:  https://stackoverflow.com/questions/57174643/use-bootstrap-to-manage-a-single-page-app-with-pseudo-pagination-functions -->
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +17,6 @@
         <!-- Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
     </head>
 
     <body>
@@ -62,7 +41,7 @@
                 </div>
             </nav>
 
-            <!-- Page Content  -->
+            <!-- Main Content  -->
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
@@ -80,21 +59,21 @@
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <div class="jumbotron">
-                        <h2 class="display-3">Safe, you made it to Home [Base]</h2>
+                        <h3 style="-webkit-user-select: auto;">Home base, safe!</h3>
                         <p class="lead">We adding pagination, an excellent way to navigate large amounts of content, on your website using a jQuery and Bootstrap.</p>
                         <p><a class="btn btn-lg btn-success" href="#" role="button">Learn More</a></p>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     <div class="jumbotron">
-                        <h2 class="display-3">About, what is this all about?</h2>
+                        <h3 style="-webkit-user-select: auto;">About, what is this all about?</h3>
                         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                         <p><a class="btn btn-lg btn-success" href="#" role="button">Click here</a></p>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                     <div class="jumbotron">
-                        <h2 class="display-3">Data. Data. Data.</h2>
+                        <h3 style="-webkit-user-select: auto;">Data. Data. Data.</h3>
                         <p>This example is a quick exercise to illustrate how the default responsive navbar works. It's placed within a <code>.container</code> to limit its width and will scroll with the rest of the page's content.</p>
                         <p>
                             <a class="btn btn-lg btn-primary" href="../../components/navbar" role="button">View navbar docs »</a>
@@ -103,15 +82,14 @@
                 </div>
                 <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                     <div class="jumbotron">
-                        <h2 style="-webkit-user-select: auto;">Buy Now!</h2>
+                        <h3 style="-webkit-user-select: auto;">Buy Now!</h3>
                         <p class="lead" style="-webkit-user-select: auto;">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
                         <p style="-webkit-user-select: auto;"><a class="btn btn-lg btn-success" href="#" role="button" style="-webkit-user-select: auto;">Get started today</a></p>
                     </div>
                 </div>
-
                 <div class="tab-pane fade" id="contacts" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                     <div class="jumbotron">
-                        <h2 class="cover-heading">Team Members Contact Info</h2>
+                        <h3 class="cover-heading">Team Members Contact Info</h3>
                         <p class="lead">Aaron<br>Blaine<br>Celeste<br>Darlene</p>
                         <p class="lead">
                             <a href="#" class="btn btn-lg btn-primary">More...</a>
@@ -157,9 +135,7 @@
                     $('#sidebar').removeClass('active');
                     $('.overlay').removeClass('active');
                 })
-
             });
         </script>
     </body>
-
 </html>

@@ -7,8 +7,8 @@ Use case:
  - We're working with small and medium sized businesses to help them manage their internal operations.  
  - We want to take advantage of their employees' mobile phones.  (Bring your own device -- BYOD)
  - Progressive Web Apps work great for this.  No app store involved.  Link saved on user's home screen.  App like functionality.
- - We've been using jQuery Mobile for this, but alas, it appears that system is no longer being supported.
- - We want a single page application as we're using Firebase to authenticate users.
+ - We've been using jQuery Mobile for this, but alas, it appears that system is no longer being supported for current and future updates.
+ - We want a single page application to accommodate our authentication process. 
  - After authentication, different users get different content.  This is way easier in Single Page App via Ajax calls.
  - We like page navigation with 'fake' page base content delivered on a simple index.html file.  
  - This menu use aligns with how users think. Mobile scroll down doesn't work so well for business activities.  
